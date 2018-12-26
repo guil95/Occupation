@@ -1,0 +1,14 @@
+{
+    "name": "guilherme/occupations",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Guilherme Rodrigues",
+            "email": "guilhermerodriguestb@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    }
+}
