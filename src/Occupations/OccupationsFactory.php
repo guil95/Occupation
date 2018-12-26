@@ -1,6 +1,7 @@
 <?php
 namespace App\Occupations;
 use App\SalaryCalculation\FifteenOrTwentyFivePercent;
+use App\SalaryCalculation\SalaryCalculationInterface;
 use App\SalaryCalculation\TenOrTwentyPercent;
 use App\SalaryCalculation\TwentyOrTwentyFivePercent;
 

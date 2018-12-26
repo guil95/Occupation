@@ -1,6 +1,9 @@
 <?php
 require_once("../vendor/autoload.php");
+
 use App\Occupations\OccupationsFactory;
+
+
 $developer = OccupationsFactory::getOccupation('developer');
 $developer->setSalaryBase(2900);
 
