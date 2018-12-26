@@ -2,6 +2,7 @@
 namespace App\Occupations;
 use App\SalaryCalculation\FifteenOrTwentyFivePercent;
 use App\SalaryCalculation\TenOrTwentyPercent;
+use App\SalaryCalculation\TwentyOrTwentyFivePercent;
 
 class OccupationsFactory
 {
@@ -12,6 +13,8 @@ class OccupationsFactory
                 return new Developer(new FifteenOrTwentyFivePercent());
             case 'tester':
                 return new Tester(new TenOrTwentyPercent());
+            case 'DBA':
+                return new DBA(new TwentyOrTwentyFivePercent());
         }
     }
 }
