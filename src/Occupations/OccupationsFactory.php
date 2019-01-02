@@ -1,7 +1,6 @@
 <?php
 namespace App\Occupations;
 use App\SalaryCalculation\FifteenOrTwentyFivePercent;
-use App\SalaryCalculation\SalaryCalculationInterface;
 use App\SalaryCalculation\TenOrTwentyPercent;
 use App\SalaryCalculation\TwentyOrTwentyFivePercent;
 
@@ -10,11 +9,11 @@ class OccupationsFactory
     public static function getOccupation(string $occupation)
     {
         switch ($occupation){
-            case 'developer':
+            case Occupation::DEVELOPER:
                 return new Developer(new FifteenOrTwentyFivePercent());
-            case 'tester':
+            case Occupation::TESTER:
                 return new Tester(new TenOrTwentyPercent());
-            case 'DBA':
+            case Occupation::DBA:
                 return new DBA(new TwentyOrTwentyFivePercent());
         }
     }

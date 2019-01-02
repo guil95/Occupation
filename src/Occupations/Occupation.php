@@ -7,6 +7,10 @@ abstract class Occupation
     private $salary;
     public  $calc;
 
+    const DBA = 'DBA';
+    const DEVELOPER = 'developer';
+    const TESTER = 'tester';
+
     public function __construct(SalaryCalculationInterface $calc)
     {
         $this->calc = $calc;
