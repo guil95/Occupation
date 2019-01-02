@@ -6,7 +6,7 @@ use App\SalaryCalculation\TwentyOrTwentyFivePercent;
 
 class OccupationsFactory
 {
-    public static function getOccupation(string $occupation)
+    public static function getOccupation(string $occupation): Occupation
     {
         switch ($occupation){
             case Occupation::DEVELOPER:
